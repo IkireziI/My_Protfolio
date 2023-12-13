@@ -8,62 +8,62 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#contact">Contact Me</a>
-  </div>
-</nav>
-
-<header>
-  <div class="container">
-    <h1>Hi, I'm Inès IKIREZI</h1>
-    <p>Backend Developer</p>
-  </div>
-</header>
-
-<section id="about" class="container">
-  <h2>About Me</h2>
-  <p>
-    I'm a code architect in the digital realm, sculpting the backbone of applications with elegant and efficient backend solutions. My passion lies in turning complex challenges into streamlined, powerful code. With a knack for problem-solving and an affinity for clean architecture, I bring digital landscapes to life from behind the scenes.
-  </p>
-</section>
-
-
-
-<section id="contact" class="container">
-  <h2>Contact Me</h2>
-  <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <input type="submit" value="Send Message">
-  </form>
-</section>
-
-<footer>
-  <div class="container">
-    
-    <div class="contact-info">
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" onclick="scrollToSection('home')">Home</a>
+      <a href="#about" onclick="scrollToSection('about')">About Me</a>
+      <a href="#contact" onclick="scrollToSection('contact')">Contact Me</a>
+    </div>
+  </nav>
+  
+  <header>
+    <div class="container">
+      <h1>Hi, I'm Inès IKIREZI</h1>
+      <p>Backend Developer</p>
+    </div>
+  </header>
+  
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm a code architect in the digital realm, sculpting the backbone of applications with elegant and efficient backend solutions. My passion lies in turning complex challenges into streamlined, powerful code. With a knack for problem-solving and an affinity for clean architecture, I bring digital landscapes to life from behind the scenes.
+    </p>
+  </section>
+  
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="submitForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+  
+  <footer>
+    <div class="container">
+      
+      <div class="contact-info">
         <p>Contact me: ines@gmail.com | +250 782 496 001</p>
       </div>
       <div class="social-media">
         <a href="https://www.instagram.com/iikirezi_21/" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="https://github.com/IkireziI" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/ines-ikirezi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <p> 2023 Inès IKIREZI</p>
+        <p>2023 Inès IKIREZI</p>
       </div>
-    
-  </div>
-</footer>
+      
+    </div>
+    <script src="./script.js"></script>
+  </footer>
 
-<script src="script.js"></script>
+  
+  
 </body>
-</html>
+</html
